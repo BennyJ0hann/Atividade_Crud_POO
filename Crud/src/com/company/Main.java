@@ -153,9 +153,9 @@ public class Main {
         Scanner valor = new Scanner(System.in);
         return valor.nextLine();
     }
-    public int numeroAleatorio(){
+    public static void numeroAleatorio(){
         Random random = new Random();
         int num = random.nextInt(999999);
-        return num;
+        
     }
 }
