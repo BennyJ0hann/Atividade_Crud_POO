@@ -2,6 +2,7 @@ package com.company;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
@@ -30,6 +31,8 @@ public class Main {
             case 5:
                 Delete(listaCarros);
                 break;
+            case 6:
+                numeroAleatorio();
             default:
                 System.out.println("Opção inválida!");
         }
@@ -149,5 +152,10 @@ public class Main {
     public static String lerValorString(){
         Scanner valor = new Scanner(System.in);
         return valor.nextLine();
+    }
+    public int numeroAleatorio(){
+        Random random = new Random();
+        int num = random.nextInt(999999);
+        return num;
     }
 }
